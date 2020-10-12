@@ -1,0 +1,50 @@
+@keyframes example {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: rgba(135, 206, 235, 0.3);
+  }
+}
+
+@keyframes text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opactiy: 1;
+  }
+}
+
+.splash {
+  width: auto;
+  height: 100vh;
+  background-color: rgba(135, 206, 235, 0.3);
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+span {
+  font-size: 10rem;
+  color: white;
+  background-color: none;
+}
+
+span {
+  animation-name: text;
+  animation-delay: 1.5s;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+}
+
+h1 {
+  animation-name: text;
+  animation-duration: 3s;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+}

@@ -1,11 +1,7 @@
-<ng-template [ngIf]='splash' [ngIfElse]='base'>
-  <app-splash-screen></app-splash-screen>
-</ng-template>
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
 
-<ng-template #base>
-  <app-navbar></app-navbar>
-  <app-home></app-home>
-</ng-template>
+
 
 
 

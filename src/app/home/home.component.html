@@ -1,3 +1,15 @@
-<main class='box columns is-centered'>
-  <h1>Some text</h1>
-</main>
+
+
+<ng-template [ngIf]='splash' [ngIfElse]='display'>
+  <app-splash-screen></app-splash-screen>
+</ng-template>
+<ng-template #display>
+  <div class="container columns is-vcentered">
+    <div class="box">
+      <div class="box">
+      <h1>Hexa Photography</h1>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit soluta, illum praesentium eos repellendus, odio fuga rerum quibusdam, repudiandae culpa atque eius? Dolor, minima nemo? Enim, non. Voluptate consequatur itaque aperiam sint unde veniam modi praesentium, exercitationem inventore enim eligendi dolore suscipit atque fuga dolorum vitae neque fugit. Nemo.</p>
+      </div>
+    </div>
+  </div>
+</ng-template>
